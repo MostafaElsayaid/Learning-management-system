@@ -26,7 +26,9 @@ const app = express();
 app.use(express.json());
 
 //routes
-
+app.use('/',(req,res)=>{
+ res.json("hello world")
+})
 //adimns 
 app.use('/api/v1/admins', adminRouter);
               // academic years 
