@@ -57,7 +57,7 @@ const loginAdmin = asyncHandler(async (req, res) => {
         })
     } else {
         return res.status(201).json({
-            data: generateToken(user._id),
+            data: generateToken(user._id),user,
             message: "admin logedin succefully"
         });
     }
