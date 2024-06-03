@@ -62,7 +62,7 @@ const loginTeacher = asyncHandler(async (req, res) => {
         res.status(200).json({
             status: "success",
             message: "Teacher login successfull",
-            data: generateToken(teacher?._id)
+            data: generateToken(teacher?._id),teacher
         })
     }
     //
