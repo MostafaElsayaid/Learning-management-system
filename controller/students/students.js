@@ -65,7 +65,7 @@ const loginStudent = asyncHandler(async (req, res) => {
         res.status(200).json({
             status: "success",
             message: "Student login successfull",
-            data: generateToken(student?._id)
+            data: generateToken(student?._id),student
         })
     }
     //
